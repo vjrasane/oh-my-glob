@@ -2,6 +2,7 @@
   "name": "oh-my-glob",
   "version": "0.0.2",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "vjrasane",
   "license": "MIT",
   "scripts": {
