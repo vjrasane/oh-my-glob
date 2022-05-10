@@ -1,5 +1,7 @@
 # oh-my-glob
 
+![](./assets/oh-my-glob.gif)
+
 Directory tree filtering with multiple globs
 
 ```shell

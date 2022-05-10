@@ -33,7 +33,7 @@ export const recursiveGetFiles = (
 			const filePath = join(currentDir, file);
 			const relativePath = relative(rootDir, filePath);
 			if(!statSync(filePath).isDirectory()) 
-				return !isFileIncluded(relativePath, patterns) ? [] : [relativePath];
+				return isFileIncluded(relativePath, patterns) ? [relativePath] : [];
 			return recursiveGetFiles(patterns, filePath, rootDir);
 		} 
 	);

@@ -35,4 +35,16 @@ describe("filter", () => {
 				]
 			)
 		})
+
+
+		it("gets all files except test-dir directory", () => {
+			expect(
+				filter(join(__dirname, "test-root"), ["*", "!test-dir"])
+			).toEqual(
+				[
+					"test.file",
+					"test.other"
+				]
+			)
+		})
 })
